@@ -1,0 +1,17 @@
+﻿<Window x:Class="StarSky.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarSky"
+        mc:Ignorable="d"
+        Background="#252529"
+        WindowStyle="None"
+        WindowState="Maximized" 
+        Loaded="Start">
+    <Grid>
+        <Button HorizontalAlignment="Right" Opacity="0" Height="30" Width="30" VerticalAlignment="Top" Click="Close" Panel.ZIndex="2"/>
+        <Button HorizontalAlignment="Left" Opacity="0" Height="30" Width="30" VerticalAlignment="Top" Click="PaintSky" Panel.ZIndex="2"/>
+        <Grid x:Name="Grid"></Grid>
+    </Grid>
+</Window>
